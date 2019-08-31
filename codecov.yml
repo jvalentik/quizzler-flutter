@@ -1,2 +1,20 @@
+coverage:
+  round: up
+  range: 50..90
+  precision: 1
+  notify:
+    slack:
+      default:
+        url: "https://hooks.slack.com/services/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"
+
+comment:
+  layout: "reach, diff, flags, files"
+  behavior: default
+  require_changes: false  # if true: only post the comment if coverage changes
+  require_base: no        # [yes :: must have a base report to post]
+  require_head: yes       # [yes :: must have a head report to post]
+  branches: null
+        
 codecov:
-  token: 4a6d73bd-5a1a-441b-b68f-bf6bfb10b0a0
+  ci:
+    - codemagic.io
