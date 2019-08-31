@@ -2,12 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:quizzler/quiz_brain.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
 
-void main() => runApp(Quizzler());
+void main(){
+  runApp(
+    new MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Quizzler(),
+    )
+  );
+}
 
 class Quizzler extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.grey.shade900,
         body: SafeArea(
