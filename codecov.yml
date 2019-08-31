@@ -1,20 +1,19 @@
-# Repository Yaml
 coverage:
   round: up
-  range: 0..10
-
-# Used in Codecov after updating
-coverage:
-  round: up
-  range: 0..10
-  precision: 5
-  
-coverage:
+  range: 50..90
+  precision: 1
   notify:
     slack:
       default:
         url: "https://hooks.slack.com/services/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"
-        threshold: 1%
+
+comment:
+  layout: "reach, diff, flags, files"
+  behavior: default
+  require_changes: false  # if true: only post the comment if coverage changes
+  require_base: no        # [yes :: must have a base report to post]
+  require_head: yes       # [yes :: must have a head report to post]
+  branches: null
         
 codecov:
   ci:
