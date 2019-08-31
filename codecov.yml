@@ -1,0 +1,21 @@
+# Repository Yaml
+coverage:
+  round: up
+  range: 0..10
+
+# Used in Codecov after updating
+coverage:
+  round: up
+  range: 0..10
+  precision: 5
+  
+coverage:
+  notify:
+    slack:
+      default:
+        url: "https://hooks.slack.com/services/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"
+        threshold: 1%
+        
+codecov:
+  ci:
+    - codemagic.io
