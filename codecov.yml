@@ -14,7 +14,3 @@ comment:
   require_base: no        # [yes :: must have a base report to post]
   require_head: yes       # [yes :: must have a head report to post]
   branches: null
-        
-codecov:
-  ci:
-    - codemagic.io
